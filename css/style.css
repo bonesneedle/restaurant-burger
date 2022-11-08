@@ -386,6 +386,10 @@ h6 {
   scroll-snap-align: center center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Bebas Neue";
   font-weight: 400;
@@ -445,7 +449,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -471,11 +475,15 @@ body {
   transition: all 0.3s ease 0s;
 }
 
+.header.bg-active {
+  position: fixed;
+}
+
 .header.bg-active::before {
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
-  background-color: #ffc045;
+  background-color: rgba(255, 193, 69, 0.7529411765);
 }
 
 .header__container {
@@ -1698,6 +1706,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .header.bg-active::before {
+    background-color: #ffc045;
+  }
+
   .products__content {
     margin: 0px 0px 0px 0px;
     display: block;
