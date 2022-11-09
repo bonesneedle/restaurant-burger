@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burger House</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221109071327">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221109072234">
 </head>
 
 <body>
@@ -260,10 +260,12 @@
 							<input placeholder="email" type="email" class="reservation__input" id="input-email">
 						</div>
 						<div class="reservation__item">
-							<input placeholder="date" type="date" value="" class="reservation__input" id="input-date">
+							<input placeholder="date" type="text" value="" class="reservation__input" id="input-date"
+								onfocus="(this.type='date')" onblur="(this.type='text')">
 						</div>
 						<div class="reservation__item">
-							<input placeholder="time" type="time" class="reservation__input" id="input-time">
+							<input placeholder="time" type="text" class="reservation__input" id="input-time"
+								onfocus="(this.type='time')" onblur="(this.type='text')">
 						</div>
 						<div class="reservation__item">
 							<input placeholder="people" type="number" class="reservation__input" id="input-people" min="1"
@@ -284,7 +286,7 @@
 		by <span>Freepik</span></a> -->
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20221109071327"></script>
+	<script src="js/app.min.js?_v=20221109072234"></script>
 </body>
 
 </html>
