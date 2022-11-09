@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burger House</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221109072605">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221109073533">
 </head>
 
 <body>
@@ -268,8 +268,8 @@
 								onfocus="(this.type='time')" onblur="(this.type='text')">
 						</div>
 						<div class="reservation__item">
-							<input placeholder="people" type="number" inputmode="numeric" class="reservation__input"
-								id="input-people" min="1" max="8">
+							<input placeholder="people" type="number" inputmode="numeric" pattern="\d [1-8]"
+								class="reservation__input" id="input-people" min="1" max="8">
 						</div>
 						<div class="reservation__item">
 							<button type="submit" class="reservation__button btn">find a table</button>
@@ -286,7 +286,7 @@
 		by <span>Freepik</span></a> -->
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20221109072605"></script>
+	<script src="js/app.min.js?_v=20221109073533"></script>
 </body>
 
 </html>
