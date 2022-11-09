@@ -487,10 +487,13 @@ input[type=date]::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-month-field,
 ::-webkit-datetime-edit-year-field {
   color: #3d2514;
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
 }
 
 input[type=time]::-webkit-datetime-edit-text {
   color: #3d2514;
+  font-family: "Alfa Slab One", cursive;
 }
 
 .header {
@@ -1086,6 +1089,7 @@ input[type=time]::-webkit-datetime-edit-text {
 }
 
 .reservation__input {
+  font-family: "Montserrat", sans-serif;
   background-color: rgba(235, 174, 76, 0);
   border: 1px solid #bebebe;
   padding: 25px;
@@ -1099,27 +1103,27 @@ input[type=time]::-webkit-datetime-edit-text {
 }
 
 .reservation__input::-webkit-input-placeholder {
-  text-transform: none;
+  text-transform: uppercase;
   color: #3d3d3d;
 }
 
 .reservation__input::-moz-placeholder {
-  text-transform: none;
+  text-transform: uppercase;
   color: #3d3d3d;
 }
 
 .reservation__input:-ms-input-placeholder {
-  text-transform: none;
+  text-transform: uppercase;
   color: #3d3d3d;
 }
 
 .reservation__input::-ms-input-placeholder {
-  text-transform: none;
+  text-transform: uppercase;
   color: #3d3d3d;
 }
 
 .reservation__input::placeholder {
-  text-transform: none;
+  text-transform: uppercase;
   color: #3d3d3d;
 }
 
