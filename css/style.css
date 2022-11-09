@@ -394,6 +394,12 @@ body {
   font-family: "Bebas Neue";
   font-weight: 400;
   color: #3d2514;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body.lock {
+  overflow-y: hidden;
 }
 
 .wrapper {
