@@ -488,29 +488,46 @@ body.lock {
   background-color: #ffc045;
 }
 
-input[type=date]::-webkit-datetime-edit-text,
-::-webkit-datetime-edit-day-field,
-::-webkit-datetime-edit-month-field,
-::-webkit-datetime-edit-year-field {
-  color: #3d2514;
-  text-transform: uppercase;
-  font-family: "Alfa Slab One", cursive;
+input.error {
+  border: 2px solid red;
+  -webkit-animation-name: animError;
+          animation-name: animError;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
-input[type=time]::-webkit-datetime-edit-text {
-  color: #3d2514;
-  font-family: "Alfa Slab One", cursive;
+@-webkit-keyframes animError {
+  0% {
+    border: 2px solid red;
+  }
+
+  50% {
+    border: 5px solid red;
+  }
+
+  100% {
+    border: 2px solid red;
+  }
 }
 
-input[type=date],
-input[type=time] {
-  position: relative;
-  overflow: visible;
-}
+@keyframes animError {
+  0% {
+    border: 2px solid red;
+  }
 
-input[type=date]::before,
-input[type=time]::before {
-  /* iPads (portrait and landscape) ----------- */
+  50% {
+    border: 5px solid red;
+  }
+
+  100% {
+    border: 2px solid red;
+  }
 }
 
 .header {
@@ -1262,25 +1279,6 @@ input[type=time]::before {
 }
 
 @media (min-width: 1025px) {
-  input[type=date]::before,
-  input[type=time]::before {
-    content: attr(placeholder);
-    position: absolute;
-    text-transform: uppercase;
-    -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    top: 50%;
-  }
-
-  input[type=date]::before {
-    left: 140px;
-  }
-
-  input[type=time]::before {
-    left: 90px;
-  }
-
   .header {
     min-height: 100px;
   }
@@ -2140,27 +2138,12 @@ input[type=time]::before {
     background-color: #770d0d;
   }
 
-  input[type=time]::-webkit-calendar-picker-indicator:hover,
-  input[type=date]::-webkit-calendar-picker-indicator:hover {
-    cursor: pointer;
-    -webkit-filter: invert(0.5) sepia(1) saturate(5) hue-rotate(10deg);
-            filter: invert(0.5) sepia(1) saturate(5) hue-rotate(10deg);
-  }
-
   .delivery-header__contact:hover {
     color: #bf2222;
   }
 
   .menu-header__link:hover {
     color: #bf2222;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  input[type=date]::before,
-  input[type=time]::before {
-    /* Styles */
-    display: none;
   }
 }
 
