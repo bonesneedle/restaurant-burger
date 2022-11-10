@@ -504,10 +504,14 @@ input.error {
 
 @-webkit-keyframes animError {
   0% {
+    border: 5px solid red;
+  }
+
+  33% {
     border: 2px solid red;
   }
 
-  50% {
+  66% {
     border: 5px solid red;
   }
 
@@ -518,10 +522,14 @@ input.error {
 
 @keyframes animError {
   0% {
+    border: 5px solid red;
+  }
+
+  33% {
     border: 2px solid red;
   }
 
-  50% {
+  66% {
     border: 5px solid red;
   }
 
