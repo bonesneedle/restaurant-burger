@@ -508,37 +508,6 @@ input[type=time] {
   overflow: visible;
 }
 
-input[type=date]::before,
-input[type=time]::before {
-  content: attr(placeholder);
-  position: absolute;
-  text-transform: uppercase;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  top: 50%;
-}
-
-input[type=date]::before {
-  left: 140px;
-}
-
-@supports (-webkit-hyphens: none) {
-  input[type=date]::before {
-    left: 20px;
-  }
-}
-
-input[type=time]::before {
-  left: 90px;
-}
-
-@supports (-webkit-hyphens: none) {
-  input[type=time]::before {
-    left: 20px;
-  }
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -1288,6 +1257,25 @@ input[type=time]::before {
 }
 
 @media (min-width: 1025px) {
+  input[type=date]::before,
+  input[type=time]::before {
+    content: attr(placeholder);
+    position: absolute;
+    text-transform: uppercase;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    top: 50%;
+  }
+
+  input[type=date]::before {
+    left: 140px;
+  }
+
+  input[type=time]::before {
+    left: 90px;
+  }
+
   .header {
     min-height: 100px;
   }
@@ -1563,14 +1551,6 @@ input[type=time]::before {
 }
 
 @media (max-width: 992px) {
-  input[type=date]::before {
-    left: 135px;
-  }
-
-  input[type=time]::before {
-    left: 85px;
-  }
-
   .offers-page__text::before {
     position: absolute;
     content: "";
@@ -1904,14 +1884,6 @@ input[type=time]::before {
 }
 
 @media (max-width: 480px) {
-  input[type=date]::before {
-    left: 115px;
-  }
-
-  input[type=time]::before {
-    left: 70px;
-  }
-
   .products__content {
     margin: 0px 0px 0px 0px;
     display: block;
