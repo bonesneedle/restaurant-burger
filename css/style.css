@@ -523,8 +523,20 @@ input[type=date]::before {
   left: 140px;
 }
 
+@supports (-webkit-hyphens: none) {
+  input[type=date]::before {
+    left: 20px;
+  }
+}
+
 input[type=time]::before {
   left: 90px;
+}
+
+@supports (-webkit-hyphens: none) {
+  input[type=time]::before {
+    left: 20px;
+  }
 }
 
 .header {
