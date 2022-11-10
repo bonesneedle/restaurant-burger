@@ -508,6 +508,11 @@ input[type=time] {
   overflow: visible;
 }
 
+input[type=date]::before,
+input[type=time]::before {
+  /* iPads (portrait and landscape) ----------- */
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -2148,6 +2153,14 @@ input[type=time] {
 
   .menu-header__link:hover {
     color: #bf2222;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  input[type=date]::before,
+  input[type=time]::before {
+    /* Styles */
+    display: none;
   }
 }
 
