@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+
+700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -536,6 +538,54 @@ input.error {
   }
 }
 
+@-webkit-keyframes moveLtoR {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes moveLtoR {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes moveRtoL {
+  0% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes moveRtoL {
+  0% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -832,6 +882,10 @@ input.error {
   z-index: 10;
   padding: 0px 20px 0px 0px;
   margin-bottom: 120px;
+  -webkit-animation-name: moveLtoR;
+          animation-name: moveLtoR;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .main-screen__subtittle {
@@ -892,6 +946,10 @@ input.error {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation-name: moveRtoL;
+          animation-name: moveRtoL;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .product-main-screen__img img {
