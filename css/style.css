@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
-
-700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -489,7 +487,7 @@ body.lock {
 }
 
 input.error {
-  border: 2px solid red;
+  border: 1px solid red;
   -webkit-animation-name: animError;
           animation-name: animError;
   -webkit-animation-duration: 0.3s;
@@ -508,7 +506,7 @@ input.error {
   }
 
   33% {
-    border: 2px solid red;
+    border: 1px solid red;
   }
 
   66% {
@@ -516,7 +514,7 @@ input.error {
   }
 
   100% {
-    border: 2px solid red;
+    border: 1px solid red;
   }
 }
 
@@ -526,7 +524,7 @@ input.error {
   }
 
   33% {
-    border: 2px solid red;
+    border: 1px solid red;
   }
 
   66% {
@@ -534,7 +532,7 @@ input.error {
   }
 
   100% {
-    border: 2px solid red;
+    border: 1px solid red;
   }
 }
 
@@ -678,6 +676,113 @@ input.error {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #3d2514;
+}
+
+.footer {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.footer__container {
+  color: white;
+}
+
+.footer__container a {
+  color: inherit;
+}
+
+.footer__logo {
+  display: inline-block;
+  height: 90px;
+  margin-bottom: 50px;
+}
+
+.footer__logo img {
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__info {
+  gap: 100px;
+  margin-bottom: 170px;
+}
+
+.footer__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 42%;
+          flex: 0 0 42%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 147.0588235294%;
+}
+
+.footer__backgorund {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.footer__backgorund img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.connection-footer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.connection-footer__item {
+  font-size: 21px;
+  line-height: 176.1904761905%;
+  font-weight: 700;
+  font-size: 32px;
+  padding-left: 65px;
+  position: relative;
+}
+
+.connection-footer__item::before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 42px;
+}
+
+.other-footer__copyright a {
+  display: block;
+}
+
+.other-footer__copyright a:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.other-footer__socials {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+  font-size: 30px;
 }
 
 .main-screen {
@@ -1116,6 +1221,7 @@ input.error {
 
 .reservation {
   padding: 60px 0px 175px 0px;
+  position: relative;
   padding-top: 60px;
   padding-bottom: 175px;
 }
@@ -1133,9 +1239,13 @@ input.error {
   margin-bottom: 90px;
 }
 
+.reservation__form {
+  position: relative;
+}
+
 .reservation__input {
   font-family: "Montserrat", sans-serif;
-  background-color: rgba(235, 174, 76, 0);
+  background-color: white;
   border: 1px solid #bebebe;
   padding: 25px;
   font-size: 21px;
@@ -1180,6 +1290,47 @@ input.error {
   font-size: 21px;
 }
 
+.reservation__bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.reservation__bg img {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+
+.reservation__burger {
+  width: 193px;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-10%, 0);
+      -ms-transform: translate(-10%, 0);
+          transform: translate(-10%, 0);
+}
+
+.reservation__bottle {
+  height: 100%;
+  width: 73px;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-200%, 0);
+      -ms-transform: translate(-200%, 0);
+          transform: translate(-200%, 0);
+}
+
+.reservation__plate {
+  width: 400px;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(35%, 0);
+      -ms-transform: translate(35%, 0);
+          transform: translate(35%, 0);
+}
+
 @media (min-width: 481px) {
   .item-products__img {
     position: relative;
@@ -1218,6 +1369,28 @@ input.error {
 @media (min-width: 768px) {
   .header {
     min-height: 70px;
+  }
+
+  .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .other-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
   }
 
   .product-main-screen__img img {
@@ -1361,6 +1534,18 @@ input.error {
   .price-main-screen-product__text {
     font-size: calc(33 * (100vw / 1440));
   }
+
+  .reservation__burger {
+    width: calc(193 * (100vw / 1440));
+  }
+
+  .reservation__bottle {
+    width: calc(73 * (100vw / 1440));
+  }
+
+  .reservation__plate {
+    width: calc(400 * (100vw / 1440));
+  }
 }
 
 @media (max-width: 1440px) {
@@ -1385,6 +1570,38 @@ input.error {
 
   .swiper-pagination .swiper-pagination-bullet {
     height: calc(12px + 5 * ((100vw - 320px) / 945));
+  }
+
+  .footer {
+    padding-top: calc(20px + 60 * ((100vw - 320px) / 945));
+  }
+
+  .footer {
+    padding-bottom: calc(10px + 20 * ((100vw - 320px) / 945));
+  }
+
+  .footer__logo {
+    margin-bottom: calc(15px + 35 * ((100vw - 320px) / 945));
+  }
+
+  .footer__info {
+    margin-bottom: calc(30px + 140 * ((100vw - 320px) / 945));
+  }
+
+  .connection-footer__item {
+    font-size: calc(20px + 12 * ((100vw - 320px) / 945));
+  }
+
+  .connection-footer__item {
+    padding-left: calc(30px + 35 * ((100vw - 320px) / 945));
+  }
+
+  .connection-footer__item::before {
+    font-size: calc(28px + 14 * ((100vw - 320px) / 945));
+  }
+
+  .other-footer__socials {
+    font-size: calc(24px + 6 * ((100vw - 320px) / 945));
   }
 
   .main-screen__subtittle {
@@ -1540,7 +1757,17 @@ input.error {
   }
 }
 
+@media (max-width: 1200px) {
+  .reservation__bottle {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
+  .footer__logo {
+    height: 70px;
+  }
+
   .products__content {
     margin: 0 -20px;
     row-gap: 40px;
@@ -1558,6 +1785,10 @@ input.error {
 @media (max-width: 998px) {
   .header__container {
     padding: 5px 20px;
+  }
+
+  .footer__info {
+    gap: 20px;
   }
 }
 
@@ -1752,6 +1983,19 @@ input.error {
     font-size: 32px;
   }
 
+  .footer__logo {
+    height: 50px;
+  }
+
+  .footer__text {
+    margin-bottom: 15px;
+  }
+
+  .other-footer__copyright {
+    display: block;
+    margin: 0px 0px 15px 0px;
+  }
+
   .main-screen {
     padding: 100px 0px 20px 0px;
   }
@@ -1832,6 +2076,14 @@ input.error {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+  }
+
+  .reservation__burger {
+    width: 165px;
+  }
+
+  .reservation__plate {
+    width: 300px;
   }
 }
 
@@ -1919,6 +2171,14 @@ input.error {
   .item-products__img img {
     max-height: 200px;
   }
+
+  .reservation__burger {
+    width: 140px;
+  }
+
+  .reservation__plate {
+    width: 220px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1955,6 +2215,38 @@ input.error {
 
   .burger-menu {
     margin-left: 15px;
+  }
+
+  .footer {
+    padding-top: 20px;
+  }
+
+  .footer {
+    padding-bottom: 10px;
+  }
+
+  .footer__logo {
+    margin-bottom: 15px;
+  }
+
+  .footer__info {
+    margin-bottom: 30px;
+  }
+
+  .connection-footer__item {
+    font-size: 20px;
+  }
+
+  .connection-footer__item {
+    padding-left: 30px;
+  }
+
+  .connection-footer__item::before {
+    font-size: 28px;
+  }
+
+  .other-footer__socials {
+    font-size: 24px;
   }
 
   .main-screen__body {
@@ -2152,6 +2444,14 @@ input.error {
 
   .menu-header__link:hover {
     color: #bf2222;
+  }
+
+  .connection-footer__item:hover {
+    color: #ffc045;
+  }
+
+  .other-footer__social:hover {
+    color: #ffc045;
   }
 }
 

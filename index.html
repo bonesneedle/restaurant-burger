@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burger House</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221104003458">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221111154400">
 </head>
 
 <body>
@@ -260,12 +260,10 @@
 							<input placeholder="email" type="text" class="reservation__input" id="input-email">
 						</div>
 						<div class="reservation__item">
-							<!-- <input placeholder="date" type="date" value="" class="reservation__input" id="input-date"> -->
 							<input placeholder="date (yyyy.mm.dd)" type="text" value="" class="reservation__input"
-								id="input-date" pattern="(20[2-9][2-9].[0-9]{2}.[0-9]{2})">
+								id="input-date" pattern="([0-9]{4}.[0-9]{2}.[0-9]{2})">
 						</div>
 						<div class="reservation__item">
-							<!-- <input placeholder="time" value="00:00" type="time" class="reservation__input" id="input-time"> -->
 							<input placeholder="time (hh:mm)" type="text" class="reservation__input" id="input-time"
 								pattern="([0-2][0-9]:[0-5][0-9])">
 						</div>
@@ -276,19 +274,72 @@
 						<div class="reservation__item">
 							<button type="submit" class="reservation__button btn">find a table</button>
 						</div>
+						<div class="reservation__bg reservation__bottle">
+							<picture><source srcset="img/reservation/backgrounds/bottle.webp" type="image/webp"><img src="img/reservation/backgrounds/bottle.png" alt="bottle"></picture>
+						</div>
 					</form>
+				</div>
+				<div class="reservation__bg reservation__burger">
+					<picture><source srcset="img/reservation/backgrounds/burger.webp" type="image/webp"><img src="img/reservation/backgrounds/burger.png" alt="burger"></picture>
+				</div>
+				<div class="reservation__bg reservation__plate">
+					<picture><source srcset="img/reservation/backgrounds/plate1.webp" type="image/webp"><img src="img/reservation/backgrounds/plate1.png" alt="plate"></picture>
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
-	<!-- <a href="https://www.flaticon.com/free-icons/burger" title="burger icons">Burger icons created by smalllikeart -
+		<!-- <a href="https://www.flaticon.com/free-icons/burger" title="burger icons">Burger icons created by smalllikeart -
 		Flaticon</a> -->
-	<!-- <a
-		href="https://www.freepik.com/free-psd/american-food-website-app-template_7335301.htm#query=site&position=44&from_view=search&track=sph?sign-up=google">Layout
-		by <span>Freepik</span></a> -->
+<footer class="footer">
+	<div class="footer__container container">
+		<a href="index.html" class="footer__logo">
+			<picture><source srcset="img/footer/logo.webp" type="image/webp"><img src="img/footer/logo.png" alt="burger house"></picture>
+		</a>
+		<div class="footer__info">
+			<div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viver ra
+				maecenas accumsan lacus vel facilisis.</div>
+			<div class="footer__connection connection-footer">
+				<a href="#" class="connection-footer__item _icon-location">Main Road, Building Name,
+					Country</a>
+				<a href="mailto:info@companyname.com" class="connection-footer__item _icon-mail">info@companyname.com</a>
+			</div>
+		</div>
+		<div class="footer__other other-footer">
+			<div class="other-footer__copyright">
+				<!-- source -->
+				<a href="https://www.freepik.com/free-psd/american-food-website-app-template_7335301.htm#query=site&position=44&from_view=search&track=sph?sign-up=google"
+					target="_blank">Layout
+					by <span>Freepik</span></a>
+				<a href="https://www.flaticon.com/free-icons/burger" target="_blank" title="burger icons">Burger icons
+					created by
+					smalllikeart -
+					Flaticon</a>
+				<!-- source -->
+				<a class="other-footer__copyright" href="#" target="_blank">© Company Name 2022. All rights reserved.
+					lorem</a>
+			</div>
+			<div class="other-footer__socials">
+				<a href="#" target="_blank" class="other-footer__social">
+					<span class="_icon-instagram"></span>
+				</a>
+				<a href="#" target="_blank" class="other-footer__social">
+					<span class="_icon-facebook"></span>
+				</a>
+				<a href="#" target="_blank" class="other-footer__social">
+					<span class="_icon-twitter"></span>
+				</a>
+				<a href="#" target="_blank" class="other-footer__social">
+					<span class="_icon-whatsup"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer__backgorund">
+		<picture><source srcset="img/footer/backgrounds/background.webp" type="image/webp"><img src="img/footer/backgrounds/background.jpg" alt="background"></picture>
+	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20221104003458"></script>
+	<script src="js/app.min.js?_v=20221111154400"></script>
 </body>
 
 </html>
