@@ -1330,6 +1330,7 @@ select.error {
   border-radius: 5px;
   text-transform: none;
   color: #3d2514;
+  border: 1px solid #000;
 }
 
 .reservation__input::-webkit-input-placeholder {
@@ -1361,6 +1362,7 @@ select.error {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  height: 100%;
 }
 
 .reservation__select-little {
