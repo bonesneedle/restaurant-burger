@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burger House</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221111161455">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221112093335">
 </head>
 
 <body>
@@ -259,19 +259,25 @@
 						<div class="reservation__item">
 							<input placeholder="email" type="text" class="reservation__input" id="input-email">
 						</div>
-						<div class="reservation__item">
-							<input placeholder="date (yyyy.mm.dd)" type="text" value="" class="reservation__input"
-								id="input-date" pattern="([0-9]{4}.[0-9]{2}.[0-9]{2})">
+						<div class="reservation__item reservation__item-big">
+							<select class="reservation__select reservation__input " name="year" id="year">
+								<option selected value="2022">2022</option>
+							</select>
+							<select class="reservation__select reservation__input" name="month" id="month">
+							</select>
+							<select class="reservation__select reservation__select-little reservation__input" name="day"
+								id="day">
+							</select>
 						</div>
 						<div class="reservation__item">
-							<input placeholder="time (hh:mm)" type="text" class="reservation__input" id="input-time"
-								pattern="([0-2][0-9]:[0-5][0-9])">
+							<input placeholder="time (hh:mm)" type="text" inputmode="numeric" class="reservation__input"
+								id="input-time" pattern="([0-2][0-9]:[0-5][0-9])">
 						</div>
 						<div class="reservation__item">
 							<input placeholder="people (1-8)" type="number" inputmode="numeric" class="reservation__input"
 								id="input-people" max="8">
 						</div>
-						<div class="reservation__item">
+						<div class="reservation__item reservation__item-btn">
 							<button type="submit" class="reservation__button btn">find a table</button>
 						</div>
 						<div class="reservation__bg reservation__bottle">
@@ -339,7 +345,7 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20221111161455"></script>
+	<script src="js/app.min.js?_v=20221112093335"></script>
 </body>
 
 </html>

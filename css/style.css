@@ -488,7 +488,8 @@ body.lock {
   background-color: #ffc045;
 }
 
-input.error {
+input.error,
+select.error {
   border: 1px solid red;
   -webkit-animation-name: animError;
           animation-name: animError;
@@ -884,8 +885,8 @@ input.error {
   margin-bottom: 120px;
   -webkit-animation-name: moveLtoR;
           animation-name: moveLtoR;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
 }
 
 .main-screen__subtittle {
@@ -948,8 +949,8 @@ input.error {
           justify-content: center;
   -webkit-animation-name: moveRtoL;
           animation-name: moveRtoL;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
 }
 
 .product-main-screen__img img {
@@ -1301,6 +1302,22 @@ input.error {
   position: relative;
 }
 
+.reservation__item-big {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.reservation__item-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .reservation__input {
   font-family: "Montserrat", sans-serif;
   background-color: white;
@@ -1338,6 +1355,18 @@ input.error {
 .reservation__input::placeholder {
   text-transform: uppercase;
   color: #3d3d3d;
+}
+
+.reservation__select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.reservation__select-little {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
 }
 
 .reservation__button {
@@ -1414,6 +1443,9 @@ input.error {
         flex-wrap: wrap;
     row-gap: 25px;
     margin: 0 -12.5px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .reservation__item {
@@ -2228,6 +2260,11 @@ input.error {
 
   .item-products__img img {
     max-height: 200px;
+  }
+
+  .reservation__item-big {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .reservation__burger {
