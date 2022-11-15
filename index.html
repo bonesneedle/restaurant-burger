@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burger House</title>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221115120855">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221115131631">
 </head>
 
 <body>
@@ -259,7 +259,7 @@
 						<div class="reservation__item">
 							<input placeholder="email" type="text" class="reservation__input" id="input-email">
 						</div>
-						<div class="reservation__item reservation__item-flex">
+						<div class="reservation__item reservation__item-flex reservation__date">
 							<select class="reservation__select reservation__input " name="year" id="year">
 								<option selected value="2022">2022</option>
 							</select>
@@ -269,9 +269,11 @@
 								id="day">
 							</select>
 						</div>
-						<div class="reservation__item">
-							<input placeholder="time (hh:mm)" type="text" inputmode="numeric" class="reservation__input"
-								id="input-time" pattern="([0-2][0-9]:[0-5][0-9])">
+						<div class="reservation__item reservation__item-flex reservation__item-flex-nowrap">
+							<input placeholder="hours" type="text" inputmode="numeric" class="reservation__input"
+								id="input-hours" pattern="([0-9]{2})">
+							<input placeholder="minutes" type="text" inputmode="numeric" class="reservation__input"
+								id="input-minutes" pattern="([0-9]{2})">
 						</div>
 						<div class="reservation__item">
 							<input placeholder="people (1-8)" type="number" inputmode="numeric" class="reservation__input"
@@ -345,8 +347,8 @@
 	</div>
 </footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js?_v=20221115120855"></script>
-	<script src="js/app.min.js?_v=20221115120855"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js?_v=20221115131631"></script>
+	<script src="js/app.min.js?_v=20221115131631"></script>
 </body>
 
 </html>
